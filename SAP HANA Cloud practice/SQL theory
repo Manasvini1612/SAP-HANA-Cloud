@@ -1,1 +1,26 @@
+GROUP BY - USED WITH AGGREGATE FUNCTIONS
 
+AS - IS USED WIH AGGREGATE FUNCTIONS (MIN, MAX)
+
+The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate functions. 
+It cannot use WHERE because the aggregate functions are evaluated after WHERE clause. 
+
+offset is used when we want to display middle columns of the database table
+Eg: Q) List the next five Pixar movies sorted alphabetically 
+    A) SELECT title FROM movies order by title desc limit 4;
+
+WHERE clause - Placed before the GROUP BY clause. Cannot contain aggregate functions (e.g., SUM(), AVG(), COUNT()).
+Eg: SELECT ProductName, Price
+    FROM Products
+    WHERE Price > 50;
+HAVING clause - Placed after the GROUP BY clause. Can and often does contain aggregate functions
+Eg:  SELECT Category, COUNT(ProductID) AS NumberOfProducts
+    FROM Products
+    GROUP BY Category
+    HAVING COUNT(ProductID) > 10;
+
+JOINS:
+(INNER) JOIN: Returns records that have matching values in both tables
+LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
