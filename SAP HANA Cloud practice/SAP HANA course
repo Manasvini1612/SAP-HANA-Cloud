@@ -22,3 +22,7 @@ The component level of SAP HANA Cloud includes database components such as SAP H
 SAP HANA database and SAP HANA Cloud, data lake. Components have different release strategies (frequency, dates,
 automatic upgrades) from each other and from the SAP HANA Cloud service level. 
 This understanding is important when performing tasks like upgrading or learning about changes.
+
+
+SAP HANA Cloud plays a central role in data integration, especially concerning data storage and data management.
+
