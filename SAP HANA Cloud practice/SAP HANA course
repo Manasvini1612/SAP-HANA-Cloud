@@ -14,3 +14,11 @@ SAP HANA Cloud has two main service components that you can subscribe to in SAP 
 2)SAP HANA Cloud, data lake
 
 
+SAP HANA Cloud differs from other services offered in SAP Business Technology Platform (SAP BTP)in that it has a 
+service level and a component level.
+The service level of SAP HANA Cloud includes the administration tools that you use every day (for example, SAP HANA 
+Cloud Central, SAP HANA cockpit, and so on).
+The component level of SAP HANA Cloud includes database components such as SAP HANA Cloud, 
+SAP HANA database and SAP HANA Cloud, data lake. Components have different release strategies (frequency, dates,
+automatic upgrades) from each other and from the SAP HANA Cloud service level. 
+This understanding is important when performing tasks like upgrading or learning about changes.
